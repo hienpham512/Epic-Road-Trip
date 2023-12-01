@@ -1,0 +1,753 @@
+{
+	"info": {
+		"_postman_id": "f33b6c27-605c-485f-aab0-7b524f3ea0f2",
+		"name": "road_trip",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "14832304"
+	},
+	"item": [
+		{
+			"name": "events",
+			"item": [
+				{
+					"name": "Events",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": {\r\n        \"lat\": 48.8566,\r\n        \"lng\": 2.3522\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/events",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"events"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Events",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/events/rZ7SnyZ1Adpkj6",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"events",
+								"rZ7SnyZ1Adpkj6"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Events next page",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": {\r\n        \"lat\": 48.8566,\r\n        \"lng\": 2.3522\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/events/nextpage?page=2",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"events",
+								"nextpage"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "2"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "attractions",
+			"item": [
+				{
+					"name": "Attractions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": {\r\n        \"lat\": 48.8566,\r\n        \"lng\": 2.3522\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/attractions",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"attractions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Attractions",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/attractions/ChIJk3npIuBx5kcRkqWnNdgP57Y",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"attractions",
+								"ChIJk3npIuBx5kcRkqWnNdgP57Y"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Attractions next page",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/attractions/nextpage?pagetoken=AfLeUgO46CIPyCzklIuBaxH85VnrGFlNd4nI9i_lNRsNJu3p--eX8NOvcLGo9KgQCML2IiD2JOSiZUOuzMQkI4zY1UBHrCDGIQok3j_fCueB7y27ksJlEIpPKMV4QOBvN9Erf1mkWGPxUbaO6BfQdBE2ANfr5z8PO7XCDRcWCr-66Bo9juNr2ixtHSSIAe9bOSsbns7uBb1ocjmCy0QgGPtRZMDAErgN8qdPpghozHi1i2Nj_hzKmGjw0Vbzg14jmEMGf1SVTeuD9iXuRMay8IUmW3un8xIBkqkd39m9FjJVl7iYQyhsme7l-2lyRX0evw29_l7IoSupkmBNmeV_CPxmB83SWlTcufHa_swNUb1wdNU9we2bUv8nLQ1LbU3Gk4xVaNbZEQNFHxNC3gdJbbd9UuXlCcbOsAf-DBBZZW1Z4p-xgIikEeHavx1aCqwhh7YYJrxZdUw",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"attractions",
+								"nextpage"
+							],
+							"query": [
+								{
+									"key": "pagetoken",
+									"value": "AfLeUgO46CIPyCzklIuBaxH85VnrGFlNd4nI9i_lNRsNJu3p--eX8NOvcLGo9KgQCML2IiD2JOSiZUOuzMQkI4zY1UBHrCDGIQok3j_fCueB7y27ksJlEIpPKMV4QOBvN9Erf1mkWGPxUbaO6BfQdBE2ANfr5z8PO7XCDRcWCr-66Bo9juNr2ixtHSSIAe9bOSsbns7uBb1ocjmCy0QgGPtRZMDAErgN8qdPpghozHi1i2Nj_hzKmGjw0Vbzg14jmEMGf1SVTeuD9iXuRMay8IUmW3un8xIBkqkd39m9FjJVl7iYQyhsme7l-2lyRX0evw29_l7IoSupkmBNmeV_CPxmB83SWlTcufHa_swNUb1wdNU9we2bUv8nLQ1LbU3Gk4xVaNbZEQNFHxNC3gdJbbd9UuXlCcbOsAf-DBBZZW1Z4p-xgIikEeHavx1aCqwhh7YYJrxZdUw"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "accomodations",
+			"item": [
+				{
+					"name": "Accomodations",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": {\r\n        \"lat\": 48.8566,\r\n        \"lng\": 2.3522\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/accomodations",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"accomodations"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accomodations",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/accomodations/ChIJ-4Siox9u5kcRm9vM6DcMXyU",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"accomodations",
+								"ChIJ-4Siox9u5kcRm9vM6DcMXyU"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Accomodations next page",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/accomodations/nextpage?pagetoken=AfLeUgNUNKcFfNyAoJZhM5FQtKqCItsCq_Xc1LLY_qRV5OJbH8-ewDx3biNmvuHbqmighbRz1QybIBo-mtMlabscs0MpCfPP-W-QnrQjANCYvRqM3F89OS209Xqo_MGhRxdv5NDnVhA267K9K63qzEpj_ZApYUnyF4hjrJv62c_py-PdJt-ZkqiKnW4BaENOgSRttcJfk853xI4RFZPlEVIdDDESXapXYpVc2dKlX_MZcrK9UtS8IizS1y2DEirAIfE5sQaQ_HwoKRF0J_MErk6RAdT7ySbbc6a99uNRtyxZdxxrowSf9g7j4YAlC03vuuzxSNh24TMvD5NxAfQydu5d1AdiUhSVIMMkYlXOXvFDEHBAI3083lhOW7o0Omxe009LWsb7MkpfnbNrZNgsYXpc1JYlj5rED8KvJfnAIodBslFaMmsji_DNPGHZ",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"accomodations",
+								"nextpage"
+							],
+							"query": [
+								{
+									"key": "pagetoken",
+									"value": "AfLeUgNUNKcFfNyAoJZhM5FQtKqCItsCq_Xc1LLY_qRV5OJbH8-ewDx3biNmvuHbqmighbRz1QybIBo-mtMlabscs0MpCfPP-W-QnrQjANCYvRqM3F89OS209Xqo_MGhRxdv5NDnVhA267K9K63qzEpj_ZApYUnyF4hjrJv62c_py-PdJt-ZkqiKnW4BaENOgSRttcJfk853xI4RFZPlEVIdDDESXapXYpVc2dKlX_MZcrK9UtS8IizS1y2DEirAIfE5sQaQ_HwoKRF0J_MErk6RAdT7ySbbc6a99uNRtyxZdxxrowSf9g7j4YAlC03vuuzxSNh24TMvD5NxAfQydu5d1AdiUhSVIMMkYlXOXvFDEHBAI3083lhOW7o0Omxe009LWsb7MkpfnbNrZNgsYXpc1JYlj5rED8KvJfnAIodBslFaMmsji_DNPGHZ"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "restaurants",
+			"item": [
+				{
+					"name": "Restaurants",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": {\r\n        \"lat\": 48.8566,\r\n        \"lng\": 2.3522\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/restaurants",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"restaurants"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurants",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/restaurants/ChIJowDQ3_9x5kcRTtwZxXwH_kQ",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"restaurants",
+								"ChIJowDQ3_9x5kcRTtwZxXwH_kQ"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Restaurants next page",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/restaurants/nextpage?pagetoken=AfLeUgMqv_F6-c934Yg0Ai_yOQxmFqVLqcwnXbEYeKhut-48ka-3ZJmYhYwaOmn0YBCdsa8ys3jKjJla9e1AiwsE9Z8-jpNADtb5Su6P6XUsKKpMtisTpeS_RW6K-WO-4DJLPDA3Sf3Y06LSr-sOfmj-LYXhULaKQXYP63qqs8kcEqohveBa8ie9zOuXYMZWaC0o3zSpFgC3GLOqUB6lRr9QBq2nw-fVlhxXRh-ItyhJOo2e9zoKIYaSurtotxFBlecfg2XKFiqoM0aKb-bx3SLJxmee3_UpCBHCe9lN4jv0u_JwqB6zwFWfnoBZploNXQbswkAcajJl_cCAd0H0P7nRoqr7vb_hH8c_WR-YVT9GzqDRgbjDDBWsANnzlKpCKx_XAuu1auedPL1KOEBcNi37dI2N2MYX6_Uj-PgwjM4JNIvAZVBMYnfiXjmDLH55",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"restaurants",
+								"nextpage"
+							],
+							"query": [
+								{
+									"key": "pagetoken",
+									"value": "AfLeUgMqv_F6-c934Yg0Ai_yOQxmFqVLqcwnXbEYeKhut-48ka-3ZJmYhYwaOmn0YBCdsa8ys3jKjJla9e1AiwsE9Z8-jpNADtb5Su6P6XUsKKpMtisTpeS_RW6K-WO-4DJLPDA3Sf3Y06LSr-sOfmj-LYXhULaKQXYP63qqs8kcEqohveBa8ie9zOuXYMZWaC0o3zSpFgC3GLOqUB6lRr9QBq2nw-fVlhxXRh-ItyhJOo2e9zoKIYaSurtotxFBlecfg2XKFiqoM0aKb-bx3SLJxmee3_UpCBHCe9lN4jv0u_JwqB6zwFWfnoBZploNXQbswkAcajJl_cCAd0H0P7nRoqr7vb_hH8c_WR-YVT9GzqDRgbjDDBWsANnzlKpCKx_XAuu1auedPL1KOEBcNi37dI2N2MYX6_Uj-PgwjM4JNIvAZVBMYnfiXjmDLH55"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "bars",
+			"item": [
+				{
+					"name": "Bars",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": {\r\n        \"lat\": 48.8566,\r\n        \"lng\": 2.3522\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/bars",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"bars"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bars",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/bars/ChIJWU9CqB1u5kcR5P1F2SMoJmc",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"bars",
+								"ChIJWU9CqB1u5kcR5P1F2SMoJmc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Bars next page",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/bars/nextpage?pagetoken=AfLeUgPLxB-0TmlKgAZnTtn9YstJ6g3kUnmFXtwvHDg6-dJYAQzsAb_zbVkmLeNC8XBVay25PqebnEP3K0cEVs1cwQsb4FdaEQhzgw4QHCTpy3aDsXCVUNGuFtoB66NNF61O6W7s0710u_g-qpyLul-vTAT9hBHd2lbn9PCH_d0YudzIKnkmkD8UTosS3pN8aCgs04nKpsKj72BrsSUnq6KhGDvamheyYNZn5VPhetAMz5Z2fibChT1xW59q5mQdLIYMH0AC1YpUpZ7LJTbvKqXi-CHv82eY4SxMUM-WVGWsKt0Lm0GFbM_4sHhsaGxqVBLrDZUTpw-391rqvhSuVlSHzJemUUkyhe0333IfvPKLT3-diZ2ruo7XPJ-QijOEFh-ClP5n89z1NRgGykwSjfLsL7-_60cQSXhw7naLXAhEwmkOII91PPg",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"bars",
+								"nextpage"
+							],
+							"query": [
+								{
+									"key": "pagetoken",
+									"value": "AfLeUgPLxB-0TmlKgAZnTtn9YstJ6g3kUnmFXtwvHDg6-dJYAQzsAb_zbVkmLeNC8XBVay25PqebnEP3K0cEVs1cwQsb4FdaEQhzgw4QHCTpy3aDsXCVUNGuFtoB66NNF61O6W7s0710u_g-qpyLul-vTAT9hBHd2lbn9PCH_d0YudzIKnkmkD8UTosS3pN8aCgs04nKpsKj72BrsSUnq6KhGDvamheyYNZn5VPhetAMz5Z2fibChT1xW59q5mQdLIYMH0AC1YpUpZ7LJTbvKqXi-CHv82eY4SxMUM-WVGWsKt0Lm0GFbM_4sHhsaGxqVBLrDZUTpw-391rqvhSuVlSHzJemUUkyhe0333IfvPKLT3-diZ2ruo7XPJ-QijOEFh-ClP5n89z1NRgGykwSjfLsL7-_60cQSXhw7naLXAhEwmkOII91PPg"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "night clubs",
+			"item": [
+				{
+					"name": "Night Clubs",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"location\": {\r\n        \"lat\": 48.8566,\r\n        \"lng\": 2.3522\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/nightclubs",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"nightclubs"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Night Clubs",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/nightclubs/ChIJWU9CqB1u5kcR5P1F2SMoJmc",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"nightclubs",
+								"ChIJWU9CqB1u5kcR5P1F2SMoJmc"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Night Clubs next page",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/nightclubs/nextpage?pagetoken=AfLeUgMvLsU7ugjSJnosDNI64oVNUr9ljfCJk0iFu3Vp6llAhXdZY1OId7JqakDdK8Vmcm514UmIVPJ6IfwKduFjj-7Ha4WuWO2Ro0yyp-UuGKwYU91ywfgwEaEro8P_izBZq1wr5Q4mRSUu9wgbpV_0Ai9ILlJFuAn633yHrTkmlLNHC3BRRPwRLCvrKcSw3YMuziRv_72QzmIlo5IQfj2MongPnIH02dBjs9CVtL70TI_ixsTjOdox4y5WBgX0t180kzKn4WPx-GfKoR52siwKp8wl5vQKVfwYqgX0vqMU_W8OcNE_iZA3gCNIaCGPLk1ypFzUPi8t36w4ljNQ760yKuq_nbCX0rjM6x33zWhXble81UQE17--zRfmuJrj5WGwZ_JszsTpJY40Q9yjShrTbRlEuXwt6K6MCQIbAmT9AvYzziiUeLjTeGFbWFav",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"nightclubs",
+								"nextpage"
+							],
+							"query": [
+								{
+									"key": "pagetoken",
+									"value": "AfLeUgMvLsU7ugjSJnosDNI64oVNUr9ljfCJk0iFu3Vp6llAhXdZY1OId7JqakDdK8Vmcm514UmIVPJ6IfwKduFjj-7Ha4WuWO2Ro0yyp-UuGKwYU91ywfgwEaEro8P_izBZq1wr5Q4mRSUu9wgbpV_0Ai9ILlJFuAn633yHrTkmlLNHC3BRRPwRLCvrKcSw3YMuziRv_72QzmIlo5IQfj2MongPnIH02dBjs9CVtL70TI_ixsTjOdox4y5WBgX0t180kzKn4WPx-GfKoR52siwKp8wl5vQKVfwYqgX0vqMU_W8OcNE_iZA3gCNIaCGPLk1ypFzUPi8t36w4ljNQ760yKuq_nbCX0rjM6x33zWhXble81UQE17--zRfmuJrj5WGwZ_JszsTpJY40Q9yjShrTbRlEuXwt6K6MCQIbAmT9AvYzziiUeLjTeGFbWFav"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "directions",
+			"item": [
+				{
+					"name": "Directions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"origin\": {\r\n        \"lat\": 48.8595574,\r\n        \"lng\": 2.3472137\r\n    },\r\n    \"destination\": {\r\n        \"lat\": 48.8029812,\r\n        \"lng\": 2.3712608\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/directions",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"directions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Directions Copy",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"origin\": {\r\n        \"lat\": 48.8595574,\r\n        \"lng\": 2.3472137\r\n    },\r\n    \"destination\": {\r\n        \"lat\": 48.8029812,\r\n        \"lng\": 2.3712608\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "https://app.ticketmaster.com/discovery/v2/events?apikey=YOUR_API_KEY&latlong=48.8566140,2.3522219&locale=*&sort=distance,asc&city=paris&countryCode=FR&location=ffefe",
+							"protocol": "https",
+							"host": [
+								"app",
+								"ticketmaster",
+								"com"
+							],
+							"path": [
+								"discovery",
+								"v2",
+								"events"
+							],
+							"query": [
+								{
+									"key": "apikey",
+									"value": "YOUR_API_KEY"
+								},
+								{
+									"key": "latlong",
+									"value": "48.8566140,2.3522219"
+								},
+								{
+									"key": "locale",
+									"value": "*"
+								},
+								{
+									"key": "sort",
+									"value": "distance,asc"
+								},
+								{
+									"key": "city",
+									"value": "paris"
+								},
+								{
+									"key": "countryCode",
+									"value": "FR"
+								},
+								{
+									"key": "location",
+									"value": "ffefe"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "packages",
+			"item": [
+				{
+					"name": "Packages",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"origin\": {\r\n        \"lat\": 48.8595574,\r\n        \"lng\": 2.3472137\r\n    },\r\n    \"destination\": {\r\n        \"lat\": 48.8029812,\r\n        \"lng\": 2.3712608\r\n    }\r\n}"
+						},
+						"url": {
+							"raw": "{{road_trip_local}}/packages",
+							"host": [
+								"{{road_trip_local}}"
+							],
+							"path": [
+								"packages"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "ping pong",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{road_trip_local}}/ping",
+					"host": [
+						"{{road_trip_local}}"
+					],
+					"path": [
+						"ping"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
